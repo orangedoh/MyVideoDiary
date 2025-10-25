@@ -11,6 +11,11 @@
 		19BC552E2EAD3ABD0000CBC1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC552D2EAD3ABD0000CBC1 /* ContentView.swift */; };
 		19BC55302EAD3AC20000CBC1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19BC552F2EAD3AC20000CBC1 /* Assets.xcassets */; };
 		19BC55342EAD3AC20000CBC1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19BC55332EAD3AC20000CBC1 /* Preview Assets.xcassets */; };
+		19BC553B2EAD43470000CBC1 /* VideoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC553A2EAD43470000CBC1 /* VideoManager.swift */; };
+		19BC553D2EAD436D0000CBC1 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC553C2EAD436D0000CBC1 /* CameraView.swift */; };
+		19BC553F2EAD437E0000CBC1 /* GalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC553E2EAD437E0000CBC1 /* GalleryView.swift */; };
+		19BC55412EAD438D0000CBC1 /* VideoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC55402EAD438D0000CBC1 /* VideoPlayerView.swift */; };
+		19BC55432EAD54350000CBC1 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 19BC55422EAD54350000CBC1 /* .gitignore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +25,11 @@
 		19BC552F2EAD3AC20000CBC1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		19BC55312EAD3AC20000CBC1 /* FaceApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FaceApp.entitlements; sourceTree = "<group>"; };
 		19BC55332EAD3AC20000CBC1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		19BC553A2EAD43470000CBC1 /* VideoManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoManager.swift; sourceTree = "<group>"; };
+		19BC553C2EAD436D0000CBC1 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		19BC553E2EAD437E0000CBC1 /* GalleryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryView.swift; sourceTree = "<group>"; };
+		19BC55402EAD438D0000CBC1 /* VideoPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerView.swift; sourceTree = "<group>"; };
+		19BC55422EAD54350000CBC1 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +46,7 @@
 		19BC551F2EAD3ABD0000CBC1 = {
 			isa = PBXGroup;
 			children = (
+				19BC55422EAD54350000CBC1 /* .gitignore */,
 				19BC552A2EAD3ABD0000CBC1 /* FaceApp */,
 				19BC55292EAD3ABD0000CBC1 /* Products */,
 			);
@@ -54,6 +65,10 @@
 			children = (
 				19BC552B2EAD3ABD0000CBC1 /* FaceAppApp.swift */,
 				19BC552D2EAD3ABD0000CBC1 /* ContentView.swift */,
+				19BC553A2EAD43470000CBC1 /* VideoManager.swift */,
+				19BC553C2EAD436D0000CBC1 /* CameraView.swift */,
+				19BC553E2EAD437E0000CBC1 /* GalleryView.swift */,
+				19BC55402EAD438D0000CBC1 /* VideoPlayerView.swift */,
 				19BC552F2EAD3AC20000CBC1 /* Assets.xcassets */,
 				19BC55312EAD3AC20000CBC1 /* FaceApp.entitlements */,
 				19BC55322EAD3AC20000CBC1 /* Preview Content */,
@@ -128,6 +143,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				19BC55342EAD3AC20000CBC1 /* Preview Assets.xcassets in Resources */,
+				19BC55432EAD54350000CBC1 /* .gitignore in Resources */,
 				19BC55302EAD3AC20000CBC1 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -141,6 +157,10 @@
 			files = (
 				19BC552E2EAD3ABD0000CBC1 /* ContentView.swift in Sources */,
 				19BC552C2EAD3ABD0000CBC1 /* FaceAppApp.swift in Sources */,
+				19BC553B2EAD43470000CBC1 /* VideoManager.swift in Sources */,
+				19BC553D2EAD436D0000CBC1 /* CameraView.swift in Sources */,
+				19BC553F2EAD437E0000CBC1 /* GalleryView.swift in Sources */,
+				19BC55412EAD438D0000CBC1 /* VideoPlayerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,8 +290,13 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"FaceApp/Preview Content\"";
+				DEVELOPMENT_TEAM = 9AUBMK97R5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = MyVideoDiary;
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need camera access to record your diary videos.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "We need microphone access to record audio with your videos.";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "We need photo library access to save your videos.";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -290,7 +315,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = orangedoh.FaceApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -306,8 +332,13 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"FaceApp/Preview Content\"";
+				DEVELOPMENT_TEAM = 9AUBMK97R5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = MyVideoDiary;
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need camera access to record your diary videos.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "We need microphone access to record audio with your videos.";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "We need photo library access to save your videos.";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -326,7 +357,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = orangedoh.FaceApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
