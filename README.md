@@ -46,8 +46,7 @@ VideoDiary/
 ├── GalleryView.swift        // Video gallery with thumbnails & playback
 ├── VideoManager.swift       // Handles file saving, listing, deleting
 ├── VideoPlayerView.swift    // Playback screen
-├── ThumbnailView.swift      // Generates video thumbnails
-└── VideoDiaryApp.swift      // App entry point
+└── FaceAppApp.swift      // App entry point
 ```
 
 ---
