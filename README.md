@@ -5,17 +5,7 @@ This app allows users to record short front-camera videos, view them in a galler
 
 ---
 
-### Tech Stack
-
-* **Framework:** SwiftUI (iOS)
-* **Language:** Swift 5
-* **APIs:** AVFoundation (camera & recording), AVKit (playback)
-* **Storage:** Local app directory 
-* **Device Support:** iPhone (requires physical device for camera access)
-
----
-
-### 🚀 Features
+### Features
 
 **Record Video**
 
@@ -30,14 +20,13 @@ This app allows users to record short front-camera videos, view them in a galler
 * Tap to play video
 * Swipe to delete
 
-✅ **Storage Tracking**
+**Storage Tracking**
 
 * Displays total storage used by all recorded videos
-* Automatically updates after recording or deleting clips
 
 ---
 
-### 🧩 Project Structure
+### Project Structure
 
 ```
 VideoDiary/
@@ -51,7 +40,7 @@ VideoDiary/
 
 ---
 
-### ⚙️ Setup Instructions
+### Setup Instructions
 
 1. **Clone** the project:
 
@@ -81,14 +70,13 @@ VideoDiary/
 
 ---
 
-### 🧠 Known Limitations
+### Known Limitations
 
 * Camera doesn’t work on the Xcode Simulator (requires physical device).
-* 
 ---
 
 
-### 👤 Author
+### Author
 
 **Name:** Rimma Davletova
 **Date:** October 2025
